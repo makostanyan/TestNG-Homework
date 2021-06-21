@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UnitTest" verbose="1" parallel="methods">
+    <test name="test">
+        <groups>
+            <run>
+                <include name="longTypeTests"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="DivWithLong"/>
+            <class name="MultWithLong"/>
+            <class name="SumWithLong"/>
+        </classes>
+    </test>
+</suite>
